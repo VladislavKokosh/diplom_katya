@@ -25,7 +25,11 @@ const Header = () => {
 
           {
             items.map(elem => (
-              <HeaderItem title={elem.title} key={elem.title}/>
+              <HeaderItem
+                link={elem.link}
+                title={elem.title}
+                key={elem.title}
+              />
             ))
           }
         </div>

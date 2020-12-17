@@ -1,23 +1,30 @@
 export const items = [
   {
-    title: 'Предприятие'
+    title: 'Предприятие',
+    link: '/enterprise'
   },
   {
-    title: 'Продукция'
+    title: 'Продукция',
+    link: '/production'
   },
   {
-    title: 'Услуги'
+    title: 'Услуги',
+    link: '/services'
   },
   {
-    title: 'Закупка'
+    title: 'Закупка',
+    link: '/purchase'
   },
   {
-    title: 'Экспорт'
+    title: 'Экспорт',
+    link: '/export'
   },
   {
-    title: 'Новости'
+    title: 'Новости',
+    link: '/news'
   },
   {
-    title: 'Контакты'
+    title: 'Контакты',
+    link: '/contacts'
   }
 ]
