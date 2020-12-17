@@ -1,0 +1,35 @@
+@import '../../styles/fonts/fonts';
+
+.title {
+  background-color: #f7fafc;
+
+  & a {
+    font-family: 'FuturaBold';
+    color: #969db4;
+    font-size: 1rem;
+  }
+
+  &__container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.1rem 0 3.1rem;
+  }
+
+  &__page-title {
+    font-size: 3.4rem;
+    font-family: 'FuturaBold';
+  }
+
+  &__current-link {
+    font-size: 0.8rem;
+    font-family: 'FuturaBold';
+  }
+}
