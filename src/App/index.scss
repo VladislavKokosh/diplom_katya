@@ -1,0 +1,9 @@
+@import '../styles/fonts/_fonts.scss';
+@import '../styles/_colors.scss';
+
+.app {
+  font-family: 'FuturaBook';
+  color: $black;
+  height: 100vh;
+  background-color: $grey;
+}

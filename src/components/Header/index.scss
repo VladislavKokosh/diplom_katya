@@ -1,0 +1,24 @@
+@import '../../styles/colors';
+
+.header {
+  background-color: $white;
+
+  &__container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  &__logo {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

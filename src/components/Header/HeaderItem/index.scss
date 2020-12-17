@@ -1,0 +1,12 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts/fonts';
+
+.header-item {
+  font-size: 1.5rem;
+  font-family: 'FuturaBold';
+
+  &:hover {
+    cursor: pointer;
+    color: $blue;
+  }
+}
