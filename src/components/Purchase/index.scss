@@ -18,6 +18,10 @@
   &__text {
     width: 500px;
     text-align: justify;
+    &-title {
+        font-size: 1.2rem;
+        font-family: 'FuturaBold';
+    }
   }
 
   &__slider {

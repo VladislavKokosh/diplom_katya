@@ -14,7 +14,7 @@ const Purchase = () => {
       <div className='purchase__container'>
         <div className='purchase__wrapper'>
           <div className ='purchase__text'>
-            ОАО «Березовский комбикормовый завод» закупает:
+            <span className ='purchase__text-title'>ОАО «Березовский комбикормовый завод» закупает:</span>
             <ul>
               {
                 items.map((item, index) => {
@@ -26,9 +26,6 @@ const Purchase = () => {
             Объем поставок: по согласованию сторон.
             Порядок расчетов: денежными средствами, возможен взаиморасчет встречной поставкой продукции. 
             Закупочная цена: индивидуальное рассмотрение предложений в зависимости от объемов и условий поставки.
-          </div>
-          <div className ='purchase__slider'>
-              <Slider></Slider>
           </div>
         </div>
       </div>
