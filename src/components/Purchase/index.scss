@@ -10,22 +10,51 @@
   }
 
   &__wrapper {
-    padding: 20px 0;
+    padding: 60px 0px;
     display: flex;
     justify-content: space-between;
   }
 
   &__text {
-    width: 500px;
     text-align: justify;
+    
     &-title {
         font-size: 1.2rem;
         font-family: 'FuturaBold';
     }
   }
 
-  &__slider {
-    width: 500px;
-    text-align: justify;
+  &__conditions {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    border: 1px solid $yellow;
+    padding: 30px 30px;
+    
+    &-title {
+      font-size: 1.5rem;
+      font-family: 'FuturaBold';
+    }
+
+    &-content {
+      display: flex;
+      margin-top: 5px;
+      padding: 10px 10px 10px 10px;
+      background-color: $lightyellow;
+      &-text {
+        word-spacing: 1;
+        width: 300px;
+        text-align: justify;
+      }
+      
+    }
+
+    &-image {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 400px;
+        bottom: 23px;
+      }
   }
 }
