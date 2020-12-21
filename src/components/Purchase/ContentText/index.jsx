@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const ContentText = ({ conditions }) => {
   return(
     <div className ='purchase__conditions-content-text'>
@@ -8,7 +9,7 @@ const ContentText = ({ conditions }) => {
           <div key={index}>
             <span className='purchase__conditions-content-text-bold'>
               {item.name}
-            </span> 
+            </span>
             {item.content}
           </div>
         ))
