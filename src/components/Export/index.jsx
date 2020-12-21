@@ -14,7 +14,9 @@ const Export = () => {
         <div className='export__wrapper'>
           <div className='export__text'>
             {
-              text.map((item, index) => <div key={index} className='export__text-paragraph'>{item.text}</div>)
+              text.map((item, index) => (
+                <div key={index} className='export__text-paragraph'>{item.text}</div>
+              ))
             }
           </div>
           <Table title='Изменение добычи ресурсов по годам' content={oilQuality}/>

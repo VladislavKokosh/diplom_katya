@@ -12,15 +12,17 @@
   &__wrapper {
 
   }
+
   table {
     margin: auto;
     margin-top: 20px;
     border-collapse: collapse;
     border: 2px solid $white;
     width: 700px;
-  }
-  table:first-child  {
-    font-family: 'FuturaBold';
+
+    table:first-child  {
+      font-family: 'FuturaBold';
+    }
   }
 
   caption {
@@ -31,11 +33,12 @@
     text-align: center ;
   }
 
-  TD, TH {
-    padding: 3px;
+  td, th {
+    padding: 5px;
     border: 1px solid $black;
     font-size: 1.05rem;
   }
+
   tr:nth-child(2){
     font-family: 'FuturaBold';
   }
