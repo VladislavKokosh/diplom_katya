@@ -5,7 +5,6 @@ import './index.scss'
 
 import Routes from '../Routes/index'
 import Header from '../components/Header'
-import Title from '../components/Title'
 
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
     <Router>
       <div className="app">
         <Header/>
-        <Title value='Главная'/>
         <Routes/>
       </div>
     </Router>
