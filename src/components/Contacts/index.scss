@@ -1,0 +1,126 @@
+@import '../../styles/colors';
+
+.contacts {
+  background-color: $white;
+
+  &__container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    padding: 50px 0;
+  }
+ 
+  &__main {
+    &-location {
+      display: flex;
+      width: 500px;
+    
+      &-icon {
+        margin: 10px
+      }
+
+      &-content {
+
+        &-title {
+          color: $darkgrey;
+          font-size: 0.8rem;
+        }
+
+        &-text {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      width: 600px;
+      margin-top: 20px;
+    }
+
+    &-phone {
+      display: flex;
+
+      &-icon {
+        margin: 10px
+      }
+
+      &-content {
+
+        &-title {
+          color: $darkgrey;
+          font-size: 0.8rem;
+        }
+
+        &-text {
+          font-size: 1.1rem;
+          font-family: 'FuturaBold';
+        }
+      }
+    }
+
+    &-mail {
+      display: flex;
+      margin-left: 20px;
+
+      &-icon {
+        margin: 10px;
+      }
+
+      &-content {
+
+        &-title {
+          color: $darkgrey;
+          font-size: 0.8rem;
+        }
+
+        &-text {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  &__container{
+    display: flex;
+    padding-top: 20px;
+
+    &-title{
+      font-family: 'FuturaBold';
+      font-size: 1.1rem;
+      margin: 15px 0px 20px 0px;
+    }
+
+    &__workers {
+      padding: 5px;
+      width: 600px;
+      &-item {
+        margin: 10px;
+  
+        &-position {
+          font-family: 'FuturaBold';
+          font-size: 1.1rem;
+        }
+  
+        &-name {
+          font-size: 1.1rem;
+        }
+        
+        &-phone {
+          margin-top: 2px;
+        }
+  
+        &-phone:hover {
+          border-bottom: 1px dashed; 
+        }
+  
+        &-mail {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
