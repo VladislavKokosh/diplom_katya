@@ -2,6 +2,8 @@ import React from 'react'
 
 import './index.scss'
 
+import ContentText from './ContentText'
+
 import { PURCHASE } from '../../styles/images'
 import { list, conditions } from './data'
 
@@ -30,17 +32,7 @@ const Purchase = () => {
                 className='purchase__conditions-image'
               /> 
             <div className ='purchase__conditions-content'>
-              <div className ='purchase__conditions-content-text'>
-                {
-                  conditions.map((item, index) => {
-                    return(
-                      <div className ='purchase__conditions-content-text-list' key={index}>
-                        <b>{item.name}</b> {item.content}<br/>
-                      </div>
-                    )
-                  })
-                }
-              </div>
+              <ContentText conditions = {conditions}/>
             </div>
           </div>
         </div>
