@@ -1,10 +1,10 @@
 import React from 'react'
 
 import './index.scss'
+import { PURCHASE } from '../../styles/images'
 
 import ContentText from './ContentText'
 
-import { PURCHASE } from '../../styles/images'
 import { list, conditions } from './data'
 
 
@@ -27,7 +27,7 @@ const Purchase = () => {
                 src={PURCHASE}
                 alt='logo'
                 className='purchase__conditions-image'
-              /> 
+              />
             <div className ='purchase__conditions-content'>
               <ContentText conditions = {conditions}/>
             </div>
