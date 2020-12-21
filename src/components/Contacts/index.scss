@@ -94,7 +94,7 @@
       margin: 15px 0px 20px 0px;
     }
 
-    &__workers {
+    &_workers {
       padding: 5px;
       width: 600px;
       &-item {
@@ -111,6 +111,7 @@
         
         &-phone {
           margin-top: 2px;
+          display: block;
         }
   
         &-phone:hover {
@@ -119,6 +120,7 @@
   
         &-mail {
           margin-top: 2px;
+          display: block;
         }
       }
     }

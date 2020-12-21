@@ -1,11 +1,11 @@
 import React from 'react'
 
 import './index.scss'
+import { LOCATION, PHONE, MAIL } from '../../styles/images'
 
 import WorkersContacts from './WorkersContacts'
 import MyMap from './Map'
 
-import { LOCATION, PHONE, MAIL } from '../../styles/images'
 import { workersContact } from './data'
 
 const Contacts = () => {
