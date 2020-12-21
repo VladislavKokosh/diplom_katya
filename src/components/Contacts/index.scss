@@ -12,18 +12,17 @@
   &__wrapper {
     padding: 50px 0;
   }
- 
+
   &__main {
     &-location {
       display: flex;
       width: 500px;
-    
+
       &-icon {
         margin: 10px
       }
 
       &-content {
-
         &-title {
           color: $darkgrey;
           font-size: 0.8rem;
@@ -49,7 +48,6 @@
       }
 
       &-content {
-
         &-title {
           color: $darkgrey;
           font-size: 0.8rem;
@@ -71,7 +69,6 @@
       }
 
       &-content {
-
         &-title {
           color: $darkgrey;
           font-size: 0.8rem;
@@ -84,11 +81,11 @@
     }
   }
 
-  &__container{
+  &__container {
     display: flex;
     padding-top: 20px;
 
-    &-title{
+    &-title {
       font-family: 'FuturaBold';
       font-size: 1.1rem;
       margin: 15px 0px 20px 0px;
@@ -99,26 +96,24 @@
       width: 600px;
       &-item {
         margin: 10px;
-  
+
         &-position {
           font-family: 'FuturaBold';
           font-size: 1.1rem;
         }
-  
+
         &-name {
           font-size: 1.1rem;
         }
-        
+
         &-phone {
           margin-top: 2px;
           display: inline-block;
-
         }
-  
         &-phone:hover {
-          text-decoration: underline; 
+          text-decoration: underline;
         }
-  
+
         &-mail {
           margin-top: 2px;
           display: block;
