@@ -20,10 +20,6 @@ export const items = [
     link: '/export'
   },
   {
-    title: 'Новости',
-    link: '/news'
-  },
-  {
     title: 'Контакты',
     link: '/contacts'
   }
