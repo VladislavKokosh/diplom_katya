@@ -9,7 +9,6 @@ import { list, conditions } from './data'
 
 
 const Purchase = () => {
-
   return (
     <div className='purchase'>
       <div className='purchase__container'>
@@ -18,9 +17,7 @@ const Purchase = () => {
             <span className ='purchase__text-title'>ОАО «Березовский комбикормовый завод» закупает:</span>
             <ul className ='purchase__text-list'>
               {
-                list.map((item, index) => {
-                  return <li key={index}>{item}</li>
-                })
+                list.map((item, index) => <li key={index}>{item}</li>)
               }
             </ul>
           </div>

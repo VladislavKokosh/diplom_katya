@@ -27,12 +27,12 @@
   &__conditions {
     position: relative;
     width: 700px;
-    height: 300px;
+    height: 320px;
     border: 1px solid $yellow;
     padding: 30px;
     
     &-title {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: 'FuturaBold';
     }
 
@@ -41,15 +41,15 @@
       margin-top: 5px;
       padding: 10px;
       background-color: $lightyellow;
+
       &-text {
-        word-spacing: 1;
+        word-spacing: 1px;
         width: 300px;
-        text-align: justify;
-        &-list {
-          word-spacing: 2px;
+
+        &-bold {
+          font-family: 'FuturaBold';
         }
       }
-      
     }
 
     &-image {
@@ -57,7 +57,7 @@
         width: 300px;
         height: 300px;
         left: 400px;
-        bottom: 23px;
+        bottom: 28px;
       }
   }
 }
