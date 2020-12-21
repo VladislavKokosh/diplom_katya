@@ -1,0 +1,46 @@
+@import '../../styles/colors';
+
+.export {
+  background-color: $white;
+
+  &__container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+
+  }
+  table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid $white;
+    width: 700px;
+  }
+  table:first-child  {
+    font-family: 'FuturaBold';
+  }
+
+  caption {
+    padding: 10px;
+    color: $white ;
+    font-family: 'FuturaBold';
+    background: $blue;
+    text-align: center ;
+  }
+
+  TD, TH {
+    padding: 3px;
+    border: 1px solid $black;
+    font-size: 1.05rem;
+  }
+  tr:nth-child(2){
+    font-family: 'FuturaBold';
+  }
+
+  div {
+    font-size: 1.2rem;
+  }
+}
