@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 import HomePage from '../pages/HomePage'
-import Purchase from '../components/Purchase'
+import PurchasePage from '../pages/PurchasePage'
 
 
 const Routes = () => {
@@ -12,7 +12,7 @@ const Routes = () => {
       <Route exact path="/enterprise" component={HomePage}/>
       <Route exact path="/production" component={HomePage}/>
       <Route exact path="/services" component={HomePage}/>
-      <Route exact path="/purchase" component={Purchase}/>
+      <Route exact path="/purchase" component={PurchasePage}/>
       <Route exact path="/export" component={HomePage}/>
       <Route exact path="/news" component={HomePage}/>
       <Route exact path="/contacts" component={HomePage}/>
