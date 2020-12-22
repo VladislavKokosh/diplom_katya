@@ -1,0 +1,64 @@
+@import '../../styles/colors';
+
+.services {
+  background-color: $white;
+
+  &__container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    padding-top: 20px;
+  }
+
+  &__corn {
+    &_title {
+      font-family: 'FuturaBold';
+      font-size: 1.2rem;
+    }
+
+    &_text {
+      text-align: justify;
+      &-bold {
+        font-family: 'FuturaBold';
+      }
+    }
+  }
+
+  &__tolling {
+    margin-top: 20px;
+    border-bottom: 1px solid $black;
+    &_title {
+      font-family: 'FuturaBold';
+      font-size: 1.2rem;
+    }
+
+    &_text {
+      text-align: justify;
+    }
+  }
+
+  &__sentence {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $black;
+    &_title {
+      font-family: 'FuturaBold';
+      font-size: 1.2rem;
+    }
+
+    &_mark {
+      font-size: 0.8rem;
+    }
+
+    &_text {
+      text-align: justify;
+      &-bold {
+        font-family: 'FuturaBold';
+      }
+    }
+  }
+}
