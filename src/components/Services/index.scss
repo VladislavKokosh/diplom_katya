@@ -14,13 +14,15 @@
   }
 
   &__corn {
-    &_title {
+
+    &-title {
       font-family: 'FuturaBold';
       font-size: 1.2rem;
     }
 
-    &_text {
+    &-text {
       text-align: justify;
+
       &-bold {
         font-family: 'FuturaBold';
       }
@@ -30,12 +32,13 @@
   &__tolling {
     margin-top: 20px;
     border-bottom: 1px solid $black;
-    &_title {
+
+    &-title {
       font-family: 'FuturaBold';
       font-size: 1.2rem;
     }
 
-    &_text {
+    &-text {
       text-align: justify;
     }
   }
@@ -45,17 +48,19 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid $black;
-    &_title {
+
+    &-title {
       font-family: 'FuturaBold';
       font-size: 1.2rem;
     }
 
-    &_mark {
+    &-mark {
       font-size: 0.8rem;
     }
 
-    &_text {
+    &-text {
       text-align: justify;
+      
       &-bold {
         font-family: 'FuturaBold';
       }
