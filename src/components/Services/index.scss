@@ -1,4 +1,8 @@
+@import '../../styles/colors';
+
 .services {
+  background-color: $white;
+
   &__container {
     max-width: 1670px;
     margin: 0 auto;

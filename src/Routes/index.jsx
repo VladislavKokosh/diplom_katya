@@ -19,9 +19,7 @@ const Routes = () => {
       <Route exact path="/production/:product" component={ProductPage}/>
       <Route exact path="/services" component={ServicesPage}/>
       <Route exact path="/purchase" component={PurchasePage}/>
-      <Route exact path="/purchase" component={HomePage}/>
       <Route exact path="/export" component={ExportPage}/>
-      <Route exact path="/news" component={HomePage}/>
       <Route exact path="/contacts" component={ContactsPage}/>
       <Redirect to='/'/>
     </Switch>
