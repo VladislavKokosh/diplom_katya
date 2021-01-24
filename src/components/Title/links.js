@@ -6,5 +6,6 @@ export const links = {
   '/purchase': 'Закупка',
   '/export': 'Экспорт',
   '/news': 'Новости',
-  '/contacts': 'Контакты'
+  '/contacts': 'Контакты',
+  '/zhmyh_podsolnechny': 'Жмых подсолнечный'
 }

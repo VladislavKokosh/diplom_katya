@@ -5,6 +5,7 @@ import './index.scss'
 
 import Routes from '../Routes/index'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <div className="app">
         <Header/>
         <Routes/>
+        <Footer/>
       </div>
     </Router>
   )

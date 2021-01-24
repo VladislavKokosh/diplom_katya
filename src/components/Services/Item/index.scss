@@ -1,0 +1,17 @@
+@import '../../../styles/colors';
+
+.item {
+  width: 300px;
+  padding: 10px 0 10px 10px;
+  background-color: $lightyellow;
+
+  &__active {
+    background-color: $yellow;
+  }
+
+
+  &:hover {
+    cursor: pointer;
+    background-color: $yellow;
+  }
+}

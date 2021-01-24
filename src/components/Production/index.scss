@@ -1,0 +1,14 @@
+.production {
+  &__container {
+    max-width: 1670px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    padding: 60px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

@@ -1,15 +1,16 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 import './index.scss'
 
 
 const HeaderItem = ({ title, link }) => {
   const history = useHistory()
+  const { pathname } = useLocation()
 
   return (
     <span
-      className='header-item'
+      className={`header-item ${pathname === link ? 'header-item_active' : ''}`}
       onClick={() => history.push(link)}
     >
       {title}
