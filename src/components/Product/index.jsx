@@ -10,7 +10,11 @@ const Product = ({ product }) => {
     <div className='product'>
       <div className='product__container'>
         <div className='product__wrapper'>
-          <img src={items[product].img} alt='' className='product__img'/>
+          <div className='product__img'>
+            <img src={items[product].img} alt='' className='product__img-image'/>
+          </div>
+          <div className ='product__title'>ОАО «Березовский комбикормовый  завод предлагает:</div>
+          <div className ='product__name'>{items[product].name}</div>
           <div className='product__info'>
             {items[product].info}
           </div>
