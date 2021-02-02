@@ -10,13 +10,60 @@
   }
 
   &__wrapper {
-    padding: 60px 0;
-    display: flex;
+    padding-top: 20px;
   }
 
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
+  &__corn {
+
+    &-title {
+      font-family: 'FuturaBold';
+      font-size: 1.2rem;
+    }
+
+    &-text {
+      text-align: justify;
+
+      &-bold {
+        font-family: 'FuturaBold';
+      }
+    }
+  }
+
+  &__tolling {
+    margin-top: 20px;
+    border-bottom: 1px solid $black;
+
+    &-title {
+      font-family: 'FuturaBold';
+      font-size: 1.2rem;
+    }
+
+    &-text {
+      text-align: justify;
+    }
+  }
+
+  &__sentence {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $black;
+
+    &-title {
+      font-family: 'FuturaBold';
+      font-size: 1.2rem;
+    }
+
+    &-mark {
+      font-size: 0.8rem;
+    }
+
+    &-text {
+      text-align: justify;
+      
+      &-bold {
+        font-family: 'FuturaBold';
+      }
+    }
   }
 }

@@ -9,6 +9,7 @@ const Table = ({title, content}) => {
             <tr key={index}>
               <td>{item.сolumnOne}</td>
               <td>{item.columnTwo}</td>
+              {item.columnTree && <td>{item.columnTree}</td>}
             </tr>
           ))
         }

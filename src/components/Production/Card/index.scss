@@ -1,6 +1,11 @@
 @import '../../../styles/colors';
 
 .card {
+  &:hover {
+    .card__wrapper {
+      box-shadow: 15px 15px 15px -10px rgba(0, 0, 0, .5);
+    }
+  }
   &__container {
     // width: 300px;
     // height: 300px;
@@ -8,26 +13,29 @@
   }
 
   &__wrapper {
+    transition: 1s;
     width: 100%;
     height: 100%;
-    padding: 15px;
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
   }
 
   &__img {
+    border-radius: 8px 8px 0px 0px;
     width: 230px;
     height: 200px;
-
     &:hover {
       cursor: pointer;
     }
   }
 
   &__title {
-    margin-top: 20px;
+    border-radius: 0px 0px 8px 8px;
+    font-family: 'FuturaBold';
     text-align: center;
-
+    height: 40px;
+    background-color: white;
     &:hover {
       cursor: pointer;
     }

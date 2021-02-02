@@ -6,7 +6,6 @@ import './index.scss'
 
 const Card = ({ title, link, img }) => {
   const history = useHistory()
-
   return (
     <div className='card'>
       <div

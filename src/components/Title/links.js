@@ -7,5 +7,18 @@ export const links = {
   '/export': 'Экспорт',
   '/news': 'Новости',
   '/contacts': 'Контакты',
-  '/zhmyh_podsolnechny': 'Жмых подсолнечный'
+  '/zhmyh_podsolnechny': 'Жмых подсолнечный',
+  '/compoundfeed_for_krc': 'Комбикорм для КРС',
+  '/compoundfeed_for_birds': 'Комбикорм для птицы',
+  '/compoundfeed_for_pig': 'Комбикорм для свиней',
+  '/compoundfeed_for_fish': 'Комбикорм для рыбы',
+  '/compoundfeed_for_rabbits': 'Комбикорм для кроликов',
+  '/rapeseed_oil_cake': 'Рапсовое масло и жмых',
+  '/soybean_oil_cake': 'Соевое масло и жмых',
+  '/sunflower_oil': 'Подсолнечное масло',
+  '/bakery_products': 'Хлебобулочные изделия',
+  '/meat_meatproducts': 'Мясо и продукты',
+  '/canned_meat': 'Мясные консервы',
+  '/poultry_duck': 'Мясо птицы(утки)',
+
 }
