@@ -3,7 +3,7 @@ import React from 'react'
 const Table = ({title, content}) => {
   return(
     <table>
-      <caption>{title ? title : '123'}</caption>
+      {title && <caption>{title}</caption>}
         {
           content.map((item, index) => (
             <tr key={index}>

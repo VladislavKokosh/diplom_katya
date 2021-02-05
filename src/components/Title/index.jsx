@@ -35,9 +35,6 @@ const Title = ({ value }) => {
     setBreadcrums(links)
   }, [location.pathname])
 
-  console.log('breadcrums', breadcrums)
-  console.log(links['/zhmyh_podsolnechny'])
-
   return (
     <div className='title'>
       <div className='title__container'>

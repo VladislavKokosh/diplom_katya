@@ -13,42 +13,62 @@
     flex-direction: column;
   }
 
-  &__title {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-family: 'FuturaBold';
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
-  &__name {
-    font-size: 1.4rem;
-    font-family: 'FuturaBold';
-  }
+  &__menu {
+    &-title {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-family: 'FuturaBold';
+    }
 
-  &__grade {
-    &-item {
-      &-active {
+    &-grade {
+      &-item {
+        &-active {
+          padding: 2px;
+          text-align: center;
+          border: 4px solid $blue;
+          width: 290px;
+          display: block;
+          font-size: 1.2em;
+          cursor: pointer;
+        }
         padding: 2px;
         text-align: center;
-        border: 4px solid $blue;
-        width: 268px;
+        border: 1px solid $blue;
+        width: 290px;
         display: block;
         font-size: 1.2em;
         cursor: pointer;
       }
-      padding: 2px;
-      text-align: center;
-      border: 1px solid $blue;
-      width: 268px;
-      display: block;
-      font-size: 1.2em;
-      cursor: pointer;
+      &-name {
+        font-size: 1.2rem;
+        font-family: 'FuturaBold';
+      }
     }
   }
 
-  &__img {
+  &__content {
+    margin-top: 40px;
+    &-info {
+      white-space: pre-line;
+      text-align: justify;
+      font-size: 1.05em;
+    }
+  }
+
+  
+
+  
+
+  &__image {
     width: 400px;
     position: relative;
-    &-image {
+    &-icon {
       width: 300px;
       height: 250px;
       max-width: 100%;
@@ -60,7 +80,7 @@
     }
   }
 
-  &__img::after{
+  &__image:after{
     content:"";
     width: 300px;
     height: calc(100% - 5px);
@@ -70,11 +90,26 @@
     z-index: 1;
     border: 5px solid $blue;
   }
-  
 
-  &__info {
-    text-align: justify;
-    white-space: pre-wrap;
-    font-size: 1.1em
+  table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid $grey;
+    width: 700px;
+  }
+
+  caption {
+    padding: 10px;
+    color: $white ;
+    font-family: 'FuturaBold';
+    background: $blue;
+    text-align: center ;
+  }
+
+  td, th {
+    padding: 5px;
+    border: 1px solid $black;
+    font-size: 1.1rem;
   }
 }

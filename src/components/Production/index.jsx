@@ -12,11 +12,13 @@ const Production = () => {
     <div className='production'>
       <div className='production__container'>
         <div className='production__wrapper'>
-          {
-            items.map((item, id) =>
-              <Card img={item.img} link={item.link} title={item.title} key={id}/>
-            )
-          }
+          <div className='production__cards'>
+            {
+              items.map((item, id) =>
+                <Card img={item.img} link={item.link} title={item.title} key={id}/>
+              )
+            }
+          </div>
         </div>
       </div>
     </div>

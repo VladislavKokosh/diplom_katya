@@ -2,39 +2,55 @@ import React, { useState } from 'react'
 
 import Table from '../Table'
 import './index.scss'
-
 import { items } from './items'
 
 
 const Product = ({ product }) => {
   const [active, setActive] = useState(0)
-  console.log(items[product].grade[active].tableOne);
   return (
     <div className='product'>
       <div className='product__container'>
         <div className='product__wrapper'>
-          <div className='product__img'>
-            <img src={items[product].img} alt='' className='product__img-image'/>
+          <div className='product__header'>
+            <div className='product__image'>
+              <img src={items[product].img} alt='' className='product__image-icon'/>
+            </div>
+            <div className='product__menu'>
+              <div className ='product__menu-title'>ОАО «Березовский комбикормовый  завод предлагает:</div>
+              <div className='product__menu-grade'>
+                {items[product].grade.length > 1 ? items[product].grade.map((item, index) => (
+                  <span 
+                    className={active === index ? 'product__menu-grade-item-active' : 'product__menu-grade-item'}
+                    key={index}
+                    onClick={() => setActive(index)}                                                                                    
+                  >
+                    {item.name}
+                  </span>
+                  )) : 
+                  <div 
+                    className='product__menu-grade-name'
+                  >
+                    {items[product].grade[active].name}
+                  </div>
+                }
+              </div>
+            </div>
           </div>
-          <div className ='product__title'>ОАО «Березовский комбикормовый  завод предлагает:</div>
-          <div className='product__grade'>
-            {items[product].grade.map((item, index) => (
-              <span 
-                className={active === index ? 'product__grade-item-active' : 'product__grade-item'}
-                key={index}
-                onClick={() => setActive(index)}
-              >
-                {item.name}
-              </span>
-            ))}
-          </div>
-          <div>{items[product].grade[active].infoOne}</div>
-          <Table title='123' content={items[product].grade[active].tableOne}></Table>
-          <div>{items[product].grade[active].infoTwo}</div>
-          <Table title='123' content={items[product].grade[active].tableTwo}></Table>
-          <div className ='product__name'>{items[product].name}</div>
-          <div className='product__info'>
-            {items[product].info}
+          <div className='product__content'>
+            <div className='product__content-info'>{items[product].grade[active].infoOne}</div>
+            {items[product].grade[active].tableOne && 
+              <Table 
+                title={items[product].grade[active].titleOne ? items[product].grade[active].titleOne : ''} 
+                content={items[product].grade[active].tableOne}
+              />
+            }
+            <div className='product__content-info'>{items[product].grade[active].infoTwo}</div>
+            {items[product].grade[active].tableTwo && 
+              <Table 
+                title={items[product].grade[active].titleTwo ? items[product].grade[active].titleTwo : ''} 
+                content={items[product].grade[active].tableTwo}
+              />
+            }
           </div>
         </div>
       </div>
