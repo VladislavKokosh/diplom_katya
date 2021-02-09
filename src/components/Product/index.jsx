@@ -37,14 +37,20 @@ const Product = ({ product }) => {
             </div>
           </div>
           <div className='product__content'>
-            <div className='product__content-info'>{items[product].grade[active].infoOne}</div>
+            <div 
+              className='product__content-info' 
+              dangerouslySetInnerHTML={{__html : items[product].grade[active].infoOne}}
+            />
             {items[product].grade[active].tableOne && 
               <Table 
                 title={items[product].grade[active].titleOne ? items[product].grade[active].titleOne : ''} 
                 content={items[product].grade[active].tableOne}
               />
             }
-            <div className='product__content-info'>{items[product].grade[active].infoTwo}</div>
+            <div 
+              className='product__content-info'
+              dangerouslySetInnerHTML={{__html : items[product].grade[active].infoTwo}}
+            />    
             {items[product].grade[active].tableTwo && 
               <Table 
                 title={items[product].grade[active].titleTwo ? items[product].grade[active].titleTwo : ''} 

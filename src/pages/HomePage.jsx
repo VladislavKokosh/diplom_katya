@@ -1,9 +1,14 @@
 import React from 'react'
 
+import Title from '../components/Title'
+import MainPage from '../components/MainPage'
 
 const HomePage = () => {
   return (
-    <>Main Page!</>
+    <>
+      <Title value='Предприятие'/>
+      <MainPage/>
+    </>
   )
 }
 
