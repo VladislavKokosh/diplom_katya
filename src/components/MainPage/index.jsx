@@ -1,8 +1,9 @@
 import React from 'react'
 import { MAN } from '../../styles/images'
-import { items } from './items.js'
+import { items, vacansy } from './items.js'
 
 import './index.scss'
+import MyMap from './Map'
 
 const MainPage = () => {
   return(
@@ -61,7 +62,6 @@ const MainPage = () => {
               </svg>
             </div>
           </div>
-          
           <div className='main__quality'>
             <div className='main__quality-header'>
               <span className='main__quality-header-title'>Система качества</span>
@@ -80,6 +80,43 @@ const MainPage = () => {
                   </div>
                 )
               })}
+            </div>
+          </div>
+          <div className='main__points'>
+            <span className='main__points-title'>Наши фирменные торговые точки</span>
+            <MyMap/>
+          </div>
+          <div className='main__shareholder'>
+            <span className='main__shareholder-title'>Информация для акционеров</span>
+            <a href='http://bkz.epfr.by/' className='main__shareholder-button'>Посмотреть</a>
+          </div>
+          <div className='main__vacancy'>
+            <div className='main__vacancy-header'>
+              <span className='main__vacancy-header-title'>Вакансии</span>
+              <p className='main__vacancy-header-text'>В настоящий момент мы ищем сотрудников на следующие должности:</p>
+            </div>
+            <div className='main__vacancy-cards'>
+              {vacansy.map((item, index) => {
+                  return(
+                  <div className='main__vacancy-card' key={index}>
+                    <span className='main__vacancy-card-title'>{item.title}</span>
+                    <p 
+                      className='main__vacancy-card-text'
+                      dangerouslySetInnerHTML={{__html : item.text}}
+                    />
+                  </div>
+                )
+              })}
+            </div>
+            <div className='main__question'>
+              <iframe
+                title='Опрос' 
+                src='https://docs.google.com/forms/d/e/1FAIpQLScoiI_2NuvBg38f8BjmGWJiC3NPVcN9-YG8p4vt9_5E_1_tYA/viewform?embedded=true' 
+                width='100%' 
+                height="740px" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"/>
             </div>
           </div>
         </div>

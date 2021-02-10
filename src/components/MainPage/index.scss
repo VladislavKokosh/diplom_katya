@@ -33,14 +33,17 @@
     height: 500px;
     background-color: $blue;
     &-content {
-      padding: 0px 0px 0px 40px;
       display: flex;
+      justify-content: center;
+      flex-direction: row;
       &-title {
+        padding: 0px 0px 0px 40px;
         font-size: 2.8em;
         font-family: 'FuturaBold';
         color: white;
       }
       &-text {
+        padding: 0px 0px 0px 40px;
         width: 740px;
         text-align: justify;
         color: white;
@@ -49,6 +52,94 @@
   }
 
   &__quality {
+    background-color: white;
+    margin-top: 40px;
+    &-header {
+      padding: 0px 0px 0px 40px;
+      &-title{
+        font-size: 2.8em;
+        font-family: 'FuturaBold';
+      }
+      &-text {
+        cursor: default;
+        font-size: 1.2em;
+      }
+    }
+
+    &-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &-card {
+      padding: 20px 40px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      &-text {
+        margin-top: 10px;
+        cursor: default;
+        width: 200px;
+        text-align: center;
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  &__shareholder {
+    height: 120px;
+    background-color: $blue;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    &-title {
+      font-size: 2.8em;
+      font-family: 'FuturaBold';
+      color: white;
+      padding-left: 80px;
+    }
+    &-button {
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 80px;
+      padding: 10px 30px;
+      position: relative;
+      border: 2px solid white;
+      font-family: 'FuturaBold';
+      color: white !important;
+      transition: .4s;
+    }
+    &-button:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      border: 2px solid rgba(0, 0, 0, 0);
+      transition: .4s;
+    }
+    &-button:hover:after {
+      border-color: white;
+      width: calc(100% - 10px);
+      height: calc(100% + 10px);
+    }
+  }
+
+  &__points {
+    background-color: white;
+    text-align: center;
+    &-title {
+      font-family: 'FuturaBold';
+      font-size: 2.8em;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__vacancy {
     background-color: white;
     &-header {
       padding: 0px 0px 0px 40px;
@@ -64,18 +155,27 @@
 
     &-cards {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       flex-wrap: wrap;
     }
+
     &-card {
-      padding: 10px 0px 10px 80px;
+      padding: 20px 40px 20px 40px;
       display: flex;
       flex-direction: column;
-      &-text {
-        cursor: default;
-        width: 220px;
+      &-title {
         text-align: center;
         font-size: 1.2em;
+        font-family: 'FuturaBold';
+      }
+      &-text {
+        margin-top: 10px;
+        cursor: default;
+        width: 480px;
+        text-align: center;
+        font-size: 1.1em;
+        text-align: justify;
+        white-space: pre-line;
       }
     }
   }
