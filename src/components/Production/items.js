@@ -1,4 +1,18 @@
-import { ZHMYH } from '../../styles/images'
+import { 
+  ZHMYH, 
+  RABBITS, 
+  PIG, 
+  FISH, 
+  BIRDS, 
+  RAPESEED_OIL, 
+  KRC, 
+  SOYBEAN_OIL, 
+  SUNFLOWER_OIL,
+  MEET,
+  KONSERVI,
+  BAKERY_PRODUCTS,
+  MEET_BIRDS 
+} from '../../styles/images'
 
 export const items = [
   {
@@ -8,62 +22,62 @@ export const items = [
   },
   {
     title: 'Комбикорм для КРС',
-    img: ZHMYH,
+    img: KRC,
     link: 'compoundfeed_for_krc'
   },
   {
     title: 'Комбикорм для птицы',
-    img: ZHMYH,
+    img: BIRDS,
     link: 'compoundfeed_for_birds'
   },
   {
     title: 'Комбикорм для свиней',
-    img: ZHMYH,
+    img: PIG,
     link: 'compoundfeed_for_pig'
   },
   {
     title: 'Комбикорм для рыбы',
-    img: ZHMYH,
+    img: FISH,
     link: 'compoundfeed_for_fish'
   },
   {
     title: 'Комбикорм для кроликов',
-    img: ZHMYH,
+    img: RABBITS,
     link: 'compoundfeed_for_rabbits'
   },
   {
     title: 'Рапсовое масло и жмых',
-    img: ZHMYH,
+    img: RAPESEED_OIL,
     link: 'rapeseed_oil_cake'
   },
   {
     title: 'Соевое масло и жмых',
-    img: ZHMYH,
+    img: SOYBEAN_OIL,
     link: 'soybean_oil_cake'
   },
   {
     title: 'Подсолнечное масло',
-    img: ZHMYH,
+    img: SUNFLOWER_OIL,
     link: 'sunflower_oil'
   },
   {
     title: 'Хлебобулочные изделия',
-    img: ZHMYH,
+    img: BAKERY_PRODUCTS,
     link: 'bakery_products'
   },
   {
     title: 'Мясо и продукты',
-    img: ZHMYH,
+    img: MEET,
     link: 'meat_meatproducts'
   },
   {
     title: 'Мясные консервы',
-    img: ZHMYH,
+    img: KONSERVI,
     link: 'canned_meat'
   },
   {
     title: 'Мясо птицы(утки)',
-    img: ZHMYH,
+    img: MEET_BIRDS,
     link: 'poultry_duck'
   }
 ]

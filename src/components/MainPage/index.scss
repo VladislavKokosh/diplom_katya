@@ -13,16 +13,24 @@
   &__history {
     background-color: white;
     &-content {
-      height: 640px;
-      padding: 60px 0px 0px 40px;
+      height: 720px;
+      padding: 60px 0px 0px 90px;
       background-size: cover;
       background-image: url('../../styles/images/background.png');
+      @media(max-width: 375px){
+        height: 1500px;
+        padding: 60px 0px 0px 20px;
+        background-image: none;
+      }
       &-title {
         font-size: 2.8em;
         font-family: 'FuturaBold';
       }
       &-text {
-        width: 740px;
+        @media(max-width: 375px){
+          width: 340px;
+        }
+        width: 780px;
         text-align: justify;
       }
     }
@@ -30,21 +38,38 @@
   }
 
   &__company {
-    height: 500px;
+    height: 1000px;
     background-color: $blue;
+    @media(max-width: 375px){
+      height: 2300px;
+    }
     &-content {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       flex-direction: row;
+      &-image {
+        width: 300px;
+        height: 300px;
+        margin-top: 80px;
+      }
       &-title {
+        @media(max-width: 375px){
+          font-size: 1.8em;
+          padding: 0px;
+        }
         padding: 0px 0px 0px 40px;
         font-size: 2.8em;
         font-family: 'FuturaBold';
         color: white;
       }
       &-text {
+        @media(max-width: 375px){
+          width: 340px;
+          padding: 0px 0px 0px 0px;
+        }
         padding: 0px 0px 0px 40px;
-        width: 740px;
+        width: 720px;
         text-align: justify;
         color: white;
       }
@@ -55,6 +80,9 @@
     background-color: white;
     margin-top: 40px;
     &-header {
+      @media(max-width: 375px){
+        padding: 0px 0px 0px 20px;
+      }
       padding: 0px 0px 0px 40px;
       &-title{
         font-size: 2.8em;
@@ -93,12 +121,20 @@
     align-items: center;
     justify-content: space-between;
     &-title {
+      @media(max-width: 375px){
+        font-size: 1.2em;
+        padding-left: 20px;
+      }
       font-size: 2.8em;
       font-family: 'FuturaBold';
       color: white;
-      padding-left: 80px;
+      padding-left: 40px;
     }
     &-button {
+      @media(max-width: 375px){
+        margin: 10px 60px;
+        padding: 10px 30px;
+      }
       text-decoration: none;
       display: inline-block;
       margin: 10px 80px;
@@ -133,6 +169,9 @@
     background-color: white;
     text-align: center;
     &-title {
+      @media(max-width: 375px){
+        font-size: 2.2em;
+      }
       font-family: 'FuturaBold';
       font-size: 2.8em;
       padding-bottom: 20px;
@@ -140,8 +179,12 @@
   }
 
   &__vacancy {
+    padding-top: 20px;
     background-color: white;
     &-header {
+      @media(max-width: 375px){
+        padding: 0px 0px 0px 20px;
+      }
       padding: 0px 0px 0px 40px;
       &-title{
         font-size: 2.8em;
@@ -160,6 +203,9 @@
     }
 
     &-card {
+      @media(max-width: 375px){
+        padding: 20px 20px 20px 20px;
+      }
       padding: 20px 40px 20px 40px;
       display: flex;
       flex-direction: column;
@@ -169,6 +215,10 @@
         font-family: 'FuturaBold';
       }
       &-text {
+        @media(max-width: 375px){
+          font-size: 1em;
+          width: 340px;
+        }
         margin-top: 10px;
         cursor: default;
         width: 480px;

@@ -31,17 +31,31 @@
     height: 320px;
     border: 1px solid $yellow;
     padding: 30px;
+    @media(max-width: 375px){
+      width: 340px;
+      height: 300px;
+      padding: 10px;
+    }
 
     &-title {
       font-size: 1.2rem;
       font-family: 'FuturaBold';
     }
 
+    &-image {
+      @media(max-width: 375px){
+        display: none;
+      }
+    }
     &-content {
       display: flex;
       margin-top: 5px;
       padding: 10px;
       background-color: $lightyellow;
+      @media(max-width: 375px){
+        margin-top: 5px;
+        padding: 10px;
+      }
 
       &-text {
         word-spacing: 1px;

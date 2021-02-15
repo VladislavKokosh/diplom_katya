@@ -14,8 +14,11 @@
   }
 
   table {
+    @media(max-width: 375px){
+      width: 340px;
+    }
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     border-collapse: collapse;
     border: 2px solid $white;
     width: 700px;
@@ -26,6 +29,9 @@
   }
 
   caption {
+    @media(max-width: 375px){
+      font-size: 0.8em;
+    }
     padding: 10px;
     color: $white ;
     font-family: 'FuturaBold';
@@ -34,6 +40,9 @@
   }
 
   td, th {
+    @media(max-width: 375px){
+      font-size: 0.6em;
+    }
     padding: 5px;
     border: 1px solid $black;
     font-size: 1.0rem;
@@ -44,6 +53,10 @@
   }
 
   div {
+    @media(max-width: 375px){
+      font-size: 1em;
+    }
     font-size: 1.1rem;
+    text-align: justify;
   }
 }

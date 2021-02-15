@@ -11,6 +11,18 @@ import iso from './ISO.png'
 import suot from './SUOT.png'
 import suos from './SUOS.png'
 import nassr from './HACCP.png'
+import rabbits from './rabbits.jpg'
+import pig from './pig.jpg'
+import fish from './fish.jpg'
+import birds from './birds.jpg'
+import rapeseed_oil from './rapeseed_oil.jpg'
+import krc from './krc.jpg'
+import soybean_oil from './soybean_oil.jpg'
+import sunflower_oil from './sunflower_oil.jpg'
+import meet from './meet.jpg'
+import konservi from './konserv.jpg'
+import bakery_products from './bakery_products.jpg'
+import meet_birds from './meet_birds.jpg'
 
 export const NASSR = nassr
 export const SUOS = suos
@@ -26,3 +38,15 @@ export const PHONE = contacts_phone
 export const ZHMYH = zhmyh
 export const DOWNLOADBUTTON = downloadbutton
 export const MAN = man
+export const RABBITS = rabbits
+export const PIG = pig
+export const FISH = fish
+export const BIRDS = birds
+export const RAPESEED_OIL = rapeseed_oil
+export const KRC = krc
+export const SOYBEAN_OIL = soybean_oil
+export const SUNFLOWER_OIL = sunflower_oil
+export const MEET = meet
+export const KONSERVI = konservi
+export const BAKERY_PRODUCTS = bakery_products
+export const MEET_BIRDS = meet_birds

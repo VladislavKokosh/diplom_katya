@@ -32,7 +32,7 @@ const MyMap = () => {
           width={'100%'} 
           style={{marginTop: '20px', height: '600px'}}
         >
-        {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
+          {coordinates.map((coordinate, index) => <Placemark key={index} geometry={coordinate} />)}
 				</Map>
 		</YMaps>
 	)

@@ -14,7 +14,7 @@ const Price = () => {
               className='price__text-image' 
               src={DOWNLOADBUTTON} 
               alt='' 
-              style={{width: '80px', height: '80px', marginRight: '30px'}}/>
+            />
             <div className='price__text-value'>
               <span className='price__text-value-title'>Cкачать прайс лист</span>
               <p className='price__text-value-paragraph'>Скачать оптовый прайс-лист на комбикорм от 3.02.2021</p>
