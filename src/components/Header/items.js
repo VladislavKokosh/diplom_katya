@@ -1,9 +1,5 @@
 export const items = [
   {
-    title: 'Предприятие',
-    link: '/enterprise'
-  },
-  {
     title: 'Продукция',
     link: '/production'
   },
