@@ -4,6 +4,7 @@ import purchase from './purchase.png'
 import contacts_location from './contacts-location.svg'
 import contacts_mail from './contacts-mail.svg'
 import contacts_phone from './contacts-phone.svg'
+import menu_button from './menu-button.svg'
 import zhmyh from './zhmyh-podsolnechny.jpg'
 import downloadbutton from './download-button.png'
 import man from './man.png'
@@ -50,3 +51,4 @@ export const MEET = meet
 export const KONSERVI = konservi
 export const BAKERY_PRODUCTS = bakery_products
 export const MEET_BIRDS = meet_birds
+export const MENU_BUTTON = menu_button

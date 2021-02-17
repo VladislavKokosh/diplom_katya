@@ -3,6 +3,10 @@
 
 .title {
   background-color: #f7fafc;
+  padding-top: 146px;
+  @media(max-width: 800px){
+    padding-top: 69.61px;
+  }
 
   & a {
     font-family: 'FuturaBold';

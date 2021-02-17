@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $white;
-
+  border-top: 1px solid lightgray;
   &__container {
     max-width: 1670px;
     margin: 0 auto;
@@ -14,10 +14,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
   }
 
   &__logo {
+    @media(max-width: 1250px){
+      display: none;
+    }
     position: absolute;
     left: 0;
   }

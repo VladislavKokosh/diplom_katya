@@ -64,7 +64,8 @@ const MainPage = () => {
                 </p>
               </div>
             </div>
-            <div style={{height: '150px', overflow:'hiden', backgroundColor:'white'}}>
+          </div>
+          <div style={{height: '150px', overflow:'hiden', backgroundColor:'white'}}>
               <svg 
                 viewBox="0 0 500 150" 
                 preserveAspectRatio="none" 
@@ -75,7 +76,6 @@ const MainPage = () => {
                   </path>
               </svg>
             </div>
-          </div>
           <div className='main__quality'>
             <div className='main__quality-header'>
               <span className='main__quality-header-title'>Система качества</span>
@@ -126,11 +126,9 @@ const MainPage = () => {
               <iframe
                 title='Опрос' 
                 src='https://docs.google.com/forms/d/e/1FAIpQLScoiI_2NuvBg38f8BjmGWJiC3NPVcN9-YG8p4vt9_5E_1_tYA/viewform?embedded=true' 
-                width='100%' 
-                height="740px" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0"/>
+                style={{width: '100%', height: '740px', frameBorder: '0', marginHeight: '0', marginWidth: '0'}}
+                frameBorder='0'
+                />
             </div>
           </div>
         </div>
