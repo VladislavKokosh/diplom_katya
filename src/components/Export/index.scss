@@ -14,15 +14,14 @@
   }
 
   table {
-    @media(max-width: 375px){
-      width: 340px;
-    }
     margin: auto;
     margin-top: 10px;
     border-collapse: collapse;
     border: 2px solid $white;
-    width: 700px;
-
+    width: 100%;
+    @media(min-width: 1000px){
+      width: 800px;
+    }
     &:first-child  {
       font-family: 'FuturaBold';
     }

@@ -123,16 +123,14 @@
 
     &_workers {
       padding: 5px;
-      width: 600px;
+      width: auto;
       &-title {
         padding: 5px;
         width: 300px;
       }
       &-item {
         margin: 10px;
-        @media(max-width: 375px){
-          width: 360px;
-        }
+        width: auto;
 
         &-position {
           font-family: 'FuturaBold';

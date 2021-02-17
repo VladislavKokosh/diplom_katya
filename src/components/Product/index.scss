@@ -4,7 +4,7 @@
   &__container {
     max-width: 1670px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0px 15px 0 15px;
   }
 
   &__wrapper {
@@ -78,6 +78,9 @@
   }
 
   &__image:after{
+    @media(max-width: 355px){
+      display: none
+    }
     content:"";
     width: 300px;
     height: calc(100% - 5px);
@@ -89,14 +92,10 @@
   }
 
   table {
-    @media(max-width: 375px){
-      width: 340px;
-    }
-    margin: auto;
+    margin:auto;
     margin-top: 20px;
     border-collapse: collapse;
     border: 2px solid $grey;
-    width: 700px;
   }
 
   caption {
