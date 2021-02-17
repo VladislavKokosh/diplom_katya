@@ -2,7 +2,7 @@
 
 .main {
   &__container {
-    max-width: 1670px;
+    max-width: 1920px;
     margin: 0 auto;
   }
 
@@ -35,8 +35,12 @@
         font-family: 'FuturaBold';
       }
       &-text {
+        @media(max-width: 2560px){
+          padding-left: 4%;
+        }
         @media(max-width: 850px){
           padding-right: 0%;
+          padding-left: 0%;
         }
         padding-right: 29%;
         text-align: justify;

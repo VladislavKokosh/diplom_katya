@@ -26,11 +26,23 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 3.1rem 0 3.1rem;
+    @media(max-width: 750px){
+      padding: 2.3rem 0 2.3rem;
+    }
+    @media(max-width: 375){
+      padding: 1.7rem 0 1.7rem;
+    }
   }
 
   &__page-title {
     font-size: 3.4rem;
     font-family: 'FuturaBold';
+    @media(max-width: 750px){
+      font-size: 2.8em;
+    }
+    @media(max-width: 375px){
+      font-size: 2.2em;
+    }
   }
 
   &__current-link {

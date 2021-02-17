@@ -1,0 +1,17 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts/fonts';
+
+.header-item {
+  padding: 5px 0px 5px 0px;
+  font-size: 1.5rem;
+  font-family: 'FuturaBold';
+
+  &_active {
+    color: $blue;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $blue;
+  }
+}

@@ -1,10 +1,12 @@
 import background from './background.png'
 import logoHeader from './logo-header1.png'
+import logoMobileHeader from './logo-header.png'
 import purchase from './purchase.png'
 import contacts_location from './contacts-location.svg'
 import contacts_mail from './contacts-mail.svg'
 import contacts_phone from './contacts-phone.svg'
 import menu_button from './menu-button.svg'
+import menu_button_close from './menu-button-close.svg'
 import zhmyh from './zhmyh-podsolnechny.jpg'
 import downloadbutton from './download-button.png'
 import man from './man.png'
@@ -52,3 +54,5 @@ export const KONSERVI = konservi
 export const BAKERY_PRODUCTS = bakery_products
 export const MEET_BIRDS = meet_birds
 export const MENU_BUTTON = menu_button
+export const MENU_BUTTON_CLOSE = menu_button_close
+export const LOGO_MOBILE_HEADER = logoMobileHeader
