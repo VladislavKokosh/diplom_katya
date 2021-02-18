@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 
+import QRCode from "qrcode.react";
+
 import Table from '../Table'
 import './index.scss'
 import { items } from './items'
 
 
 const Product = ({ product }) => {
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(0);
+
   return (
     <div className='product'>
       <div className='product__container'>
@@ -18,7 +21,7 @@ const Product = ({ product }) => {
               <div className='product__menu-grade'>
                 {items[product].grade.length > 1 ? items[product].grade.map((item, index) => (
                   <a
-                    href='#!'
+                    href='javascript:void(0);'
                     key={index}
                     className={active === index ? 'product__menu-grade-item-active' : 'product__menu-grade-item'}
                     onClick={() => setActive(index)}
@@ -58,6 +61,9 @@ const Product = ({ product }) => {
                 content={items[product].grade[active].tableTwo}
               />
             }
+            <div className='product__content-qrcode'>
+              <QRCode value={window.location.href} renderAs="svg" size={95} includeMargin/>
+            </div>
           </div>
         </div>
       </div>

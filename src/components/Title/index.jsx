@@ -9,6 +9,7 @@ import { links } from './links'
 
 const Title = ({ value }) => {
   const [breadcrums, setBreadcrums] = useState([])
+  const [product, setProduct] = useState('')
   const location = useLocation()
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const Title = ({ value }) => {
       }
       links.push({link, value})
     })
-
+    setProduct(pathnames[pathnames.length-1])
     setBreadcrums(links)
   }, [location.pathname])
 
@@ -40,7 +41,10 @@ const Title = ({ value }) => {
       <div className='title__container'>
         <div className='title__wrapper'>
           <span className='title__page-title'>
-            {value}
+            {value ?
+                value :
+                links['/'+product]
+            }
           </span>
           <Breadcrumbs separator="›" aria-label="breadcrumb">
             {
