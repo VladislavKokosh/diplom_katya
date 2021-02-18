@@ -17,17 +17,18 @@ const Product = ({ product }) => {
               <div className ='product__menu-title'>ОАО «Березовский комбикормовый  завод предлагает:</div>
               <div className='product__menu-grade'>
                 {items[product].grade.length > 1 ? items[product].grade.map((item, index) => (
-                  <a 
+                  <a
+                    href='#!'
                     key={index}
                     className={active === index ? 'product__menu-grade-item-active' : 'product__menu-grade-item'}
-                    onClick={() => setActive(index)} 
+                    onClick={() => setActive(index)}
                   >
                     <span>
                       {item.name}
                     </span>
                   </a>
-                  )) : 
-                  <div 
+                  )) :
+                  <div
                     className='product__menu-grade-name'
                   >
                     {items[product].grade[active].name}
@@ -37,23 +38,23 @@ const Product = ({ product }) => {
             </div>
           </div>
           <div className='product__content'>
-            <div 
-              className='product__content-info' 
+            <div
+              className='product__content-info'
               dangerouslySetInnerHTML={{__html : items[product].grade[active].infoOne}}
             />
-            {items[product].grade[active].tableOne && 
-              <Table 
-                title={items[product].grade[active].titleOne ? items[product].grade[active].titleOne : ''} 
+            {items[product].grade[active].tableOne &&
+              <Table
+                title={items[product].grade[active].titleOne ? items[product].grade[active].titleOne : ''}
                 content={items[product].grade[active].tableOne}
               />
             }
-            <div 
+            <div
               className='product__content-info'
               dangerouslySetInnerHTML={{__html : items[product].grade[active].infoTwo}}
-            />    
-            {items[product].grade[active].tableTwo && 
-              <Table 
-                title={items[product].grade[active].titleTwo ? items[product].grade[active].titleTwo : ''} 
+            />
+            {items[product].grade[active].tableTwo &&
+              <Table
+                title={items[product].grade[active].titleTwo ? items[product].grade[active].titleTwo : ''}
                 content={items[product].grade[active].tableTwo}
               />
             }
