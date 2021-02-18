@@ -21,7 +21,7 @@ const Product = ({ product }) => {
               <div className='product__menu-grade'>
                 {items[product].grade.length > 1 ? items[product].grade.map((item, index) => (
                   <a
-                    href='javascript:void(0);'
+                    href='#!'
                     key={index}
                     className={active === index ? 'product__menu-grade-item-active' : 'product__menu-grade-item'}
                     onClick={() => setActive(index)}
