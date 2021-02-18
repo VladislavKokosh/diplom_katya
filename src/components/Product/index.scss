@@ -1,5 +1,4 @@
 @import '../../styles/colors';
-@import '~compass-mixins/lib/compass/css3';
 
 .product {
   &__container {
@@ -46,7 +45,7 @@
           transition: all .35s;
           background: $blue;
           color: #fff !important;
-          transition: none; 
+          transition: none;
           font-size: 1.4rem !important;
           span{
             position: relative;
