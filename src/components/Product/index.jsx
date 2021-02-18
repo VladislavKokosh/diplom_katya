@@ -12,20 +12,20 @@ const Product = ({ product }) => {
       <div className='product__container'>
         <div className='product__wrapper'>
           <div className='product__header'>
-            <div className='product__image'>
-              <img src={items[product].img} alt='' className='product__image-icon'/>
-            </div>
+            <img src={items[product].img} alt='' className='product__image'/>
             <div className='product__menu'>
               <div className ='product__menu-title'>ОАО «Березовский комбикормовый  завод предлагает:</div>
               <div className='product__menu-grade'>
                 {items[product].grade.length > 1 ? items[product].grade.map((item, index) => (
-                  <span 
-                    className={active === index ? 'product__menu-grade-item-active' : 'product__menu-grade-item'}
+                  <a 
                     key={index}
-                    onClick={() => setActive(index)}                                                                                    
+                    className={active === index ? 'product__menu-grade-item-active' : 'product__menu-grade-item'}
+                    onClick={() => setActive(index)} 
                   >
-                    {item.name}
-                  </span>
+                    <span>
+                      {item.name}
+                    </span>
+                  </a>
                   )) : 
                   <div 
                     className='product__menu-grade-name'
