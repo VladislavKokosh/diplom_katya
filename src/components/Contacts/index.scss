@@ -6,20 +6,19 @@
   &__container {
     max-width: 1670px;
     margin: 0 auto;
-    padding: 0 15px;
     @media(max-width: 375px){
       padding: 0;
     }
   }
 
   &__wrapper {
-    padding: 50px 0;
+    width: 100%;
   }
 
   &__main {
+    padding: 5px;
     &-location {
       display: flex;
-      width: 500px;
 
       &-icon {
         margin: 10px
@@ -32,10 +31,6 @@
         }
 
         &-text {
-          @media(max-width: 375px){
-            font-size: 0.7rem;
-            width: 360px;
-          }
           font-size: 1.2rem;
         }
       }
@@ -44,17 +39,12 @@
     &-bottom {
       display: flex;
       flex-wrap: wrap;
-      @media(max-width: 375px){
-        font-size: 0.6rem;
-        width: 360px;
-        margin-top: 10px;
-      }
-      width: 800px;
       margin-top: 20px;
     }
 
     &-phone {
       display: flex;
+      margin-right: 20px;
 
       &-icon {
         margin: 10px
@@ -67,10 +57,6 @@
         }
 
         &-text {
-          @media(max-width: 375px){
-            font-size: 0.8rem;
-            width: 360px;
-          }
           width: 160px;
           font-size: 1.1rem;
           font-family: 'FuturaBold';
@@ -80,12 +66,6 @@
 
     &-mail {
       display: flex;
-      margin-left: 20px;
-      @media(max-width: 375px){
-        margin-left: 0px;
-        margin-top: 10px
-      }
-
       &-icon {
         margin: 10px;
       }
@@ -97,10 +77,6 @@
         }
 
         &-text {
-          @media(max-width: 375px){
-            font-size: 0.8rem;
-            width: 360px;
-          }
           font-size: 1.1rem;
         }
       }
@@ -108,19 +84,9 @@
   }
 
   &__container {
+    padding: 20px 5px 5px 5px;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
-    @media(max-width: 375px){
-      padding-top: 10px;
-    }
-
-    &-title {
-      font-family: 'FuturaBold';
-      font-size: 1.1rem;
-      margin: 15px 0px 20px 0px;
-    }
-
     &_workers {
       padding: 5px;
       width: auto;
@@ -135,24 +101,15 @@
         &-position {
           font-family: 'FuturaBold';
           font-size: 1.1rem;
-          @media(max-width: 375px){
-            font-size: 0.6rem;
-          }
         }
 
         &-name {
           font-size: 1.1rem;
-          @media(max-width: 375px){
-            font-size: 0.6rem;
-          }
         }
 
         &-phone {
           margin-top: 2px;
           display: inline-block;
-          @media(max-width: 375px){
-            font-size: 0.6rem;
-          }
         }
         &-phone:hover {
           text-decoration: underline;
@@ -161,11 +118,20 @@
         &-mail {
           margin-top: 2px;
           display: block;
-          @media(max-width: 375px){
-            font-size: 0.6rem;
-          }
         }
       }
+    }
+  }
+
+  &__map {
+    @media(max-width: 375px){
+      
+    }
+    
+    &-title {
+      font-family: 'FuturaBold';
+      font-size: 1.1rem;
+      margin: 15px 10px 20px 30px;
     }
   }
 }

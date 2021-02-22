@@ -65,13 +65,13 @@ const Contacts = () => {
             </div>
           <div className='contacts__container'>
             <WorkersContacts contacts={workersContact}/>
-            <div>
-              <div className='contacts__container-title'>
+          </div>
+          <div className='contacts__map'>
+              <div className='contacts__map-title'>
                 Мы на карте:
               </div>
               <MyMap/>
             </div>
-          </div>
         </div>
       </div>
     </div>

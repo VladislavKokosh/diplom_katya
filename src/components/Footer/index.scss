@@ -26,6 +26,20 @@
   }
 
   &__info {
-    max-width: 500px;
+    font-size: 1em !important;
+    text-align: center;
+    max-width: 535px;
+    &-item {
+      font-size: 1em !important;
+    }
+  }
+
+  &__copy {
+    display: block; 
+    text-align: center;
+    font-family: 'FuturaBold';
+    @media(max-width: 1250px){
+      font-size: 0.8em;
+    }
   }
 }
