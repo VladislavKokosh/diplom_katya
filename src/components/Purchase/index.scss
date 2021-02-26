@@ -2,7 +2,10 @@
 
 .purchase {
   background-color: $white;
-
+  @media(min-width: 1920px){
+    min-height: calc(100vh - 462px);
+  }
+  
   &__container {
     max-width: 1670px;
     margin: 0 auto;
