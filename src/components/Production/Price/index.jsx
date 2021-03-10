@@ -16,7 +16,7 @@ const Price = () => {
               alt='' 
             />
             <div className='price__text-value'>
-              <span className='price__text-value-title'>Cкачать прайс лист</span>
+              <span className='price__text-value-title'>Cкачать прайс-лист</span>
               <p className='price__text-value-paragraph'>Скачать оптовый прайс-лист на комбикорм от 3.02.2021</p>
             </div>
           </div>
