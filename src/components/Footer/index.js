@@ -36,7 +36,7 @@ const Footer = () => {
               АГ.ПЕРВОМАЙСКАЯ, УЛ. ЖЕЛЕЗНОДОРОЖНАЯ, 6
             </span>
             <span className='footer__copy'>
-              &copy; {date.getFullYear()}Якушевич Екатерина
+              &copy; {date.getFullYear()}Кокош Владислав
             </span>
           </div>
         </div>
